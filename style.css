@@ -1,32 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Noto+Emoji");
+:root { /* so i can change the colors faster*/
+  --first-bg-color: #15021e;
+  --second-bg-color: #47054f33;
+  --txt-color: #ffe7e9;
+}
 * {
-  margin-top: 40px;
-  color: #E7F9FF;
-  font-family: 'DM Mono', monospace;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--txt-color);
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
-  background-color: #74bff8;
-  margin-top: 140px;
-  margin-left: 20px;
+  background:
+    repeating-conic-gradient(rgba(0, 0, 0, 0.5) 0% 25%, transparent 0% 50%) 50% / 100px 100px,
+    linear-gradient(var(--first-bg-color), var(--second-bg-color))
+  ;
+  background-repeat: repeat, no-repeat;
+  background-position: 50%, top left;
+  background-size: 100px 100px, cover;
+  min-height: 100vh;
+  animation: scrollBackground 20s linear infinite;
 }
-header {
-  background-color: #9fe8ff;
-  position: absolute;
-  top: -50px;
-  left: 0px;
-  width: 100vw;
-  height: 170px;
+.spoil {
+  background: var(--txt-color);
 }
-header h1 {
-  font-size: 40px;
-  height: 20px;
+.spoil:hover {
+  background: #ffe7e940;
+}
+.container {
+  border-top: 3px solid #ffffff33;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px 3px black;
+  padding: 10px;
+}
+.notoemoji {
+  font-family: "Noto Emoji", system-ui;
 }
 header * {
-  margin-left: 20px;
-  color: #364e5e;
+  margin-left: 10px;
 }
-header img {
-  position: absolute;
-  right: 10px;
-  top: -5px;
+header h1 {
+  font-size: 45px;
+}
+header a {
+  display: inline-block;
+  border-top: 3px solid #ffffff33;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px 3px black;
+  padding: 7px;
+}
+header hr {
+  border: 1px solid var(--txt-color);
+}
+button {
+  border: none;
+  border-top: 3px solid #ffffff33;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px 3px black;
+  padding: 10px;
+}
+hr {
+  border: 3px dashed #47054f;
+  border-radius: 2px;
+}
+body {
+  background-color: var(--first-bg-color);
+}
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% -100%;
+  }
 }
