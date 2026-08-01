@@ -1,3 +1,2 @@
 # README.md
-<img src="generated-html.svg">
-The source code for my site.
+The source code for my site. Whatcha expect??
