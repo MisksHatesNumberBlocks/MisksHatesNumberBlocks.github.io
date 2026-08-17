@@ -1,0 +1,37 @@
+base_url = "https://kakalot17.github.io" # Put your URL here
+title = "kakalot17.github.io"
+description = "A personal site built with Zola and Ametrine"
+
+# This line tells Zola to use your downloaded theme folder!
+theme = "ametrine"
+
+compile_sass = true
+build_search_index = true
+
+[markdown]
+github_alerts = true
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# Ametrine theme custom configurations
+source_url = "https://github.com/kakalot17/kakalot17.github.io"
+author = "Your Name"
+accent_color = "blue"
+
+[extra.nav]
+links = [
+    { name = "Blog", url = "blog/", icon = "article" },
+    { name = "To Do", url = "todo/", icon = "list-checks" },
+    { name = "About", url = "about/", icon = "info"}
+]
+
+[extra.footer]
+copyright = "@**kakalot**, 2025-$YEAR"
+show_powered_by = true
+show_source = true
+show_timestamp = true
+webrings = [
+  { name = "Bucket Webring", url = "https://webring.bucketfish.me", previous = "https://webring.bucketfish.me/redirect.html?to=prev&name=Kakalot", next = "https://webring.bucketfish.me/redirect.html?to=next&name=Kakalot", random = "https://webring.bucketfish.me/redirect.html?to=random&name=Kakalot" }
+]
