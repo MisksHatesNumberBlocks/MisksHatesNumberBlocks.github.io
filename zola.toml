@@ -24,7 +24,11 @@ accent_color = "blue"
 links = [
     { name = "Blog", url = "blog/", icon = "article" },
     { name = "To Do", url = "todo/", icon = "list-checks" },
-    { name = "About", url = "about/", icon = "info"}
+    { name = "About", url = "about/", icon = "info"},
+    { name = "More", category = [
+      { name = "QnA", url = "more/qna/", icon = "chats" },
+      { name = "Moai", url = "moai/", icon = "horse" }
+    ] }
 ]
 
 [extra.footer]
