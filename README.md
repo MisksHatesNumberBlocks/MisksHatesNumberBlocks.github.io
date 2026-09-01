@@ -6,7 +6,7 @@ The source code of my site.
 You can steal some code if you wanna, just don't steal a TON of code.
 
 > [!note]
-> Now that i've renamed the site to `alternative-site`, the scss does not work
+> Now that i've renamed the site to `alternative-site`, the scss does ~~not~~ work
 
 ---
 <small></> with <3 by Kakalot</small>
